@@ -25,3 +25,6 @@ Big O is assumed to be O(log n) since it is a binary search.
 
 ![array-binary-search](./whiteboard/array-binary-search.png)
 
+
+
+
