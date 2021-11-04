@@ -1,14 +1,11 @@
 # Linked-list
 
-Resolved by Ricardo Barcenas
+Resolved by Emad Idris
 
 ## Challenge
 
-Challenge 05:
-
 Create a class that will allow creation of new nodes, search for matching contents and a string of the generated list.
 
-Challenge 06:
 
 Create methods that will allow the creation of new nodes at then end of a linked list, before a given value and after a given value.
 
