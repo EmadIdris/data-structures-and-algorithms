@@ -46,3 +46,5 @@ Write tests to prove the following functionality:
 ## Whiteboard Solution
 
 ![code-challenge-06](./whiteboard/linked-list-insertions.png)
+![code-challenge](./ScreenShot/linked-list-insertions.JPG)
+
