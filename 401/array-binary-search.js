@@ -1,24 +1,20 @@
 'use strict';
-
-const binarySearch = (array, key)=>{
-  let start = 0;
-  let end = array.length - 1;
-
-  while(start <= end){
-    let middle = Math.floor((start+end)/2);
-
-    if(key === array[middle]){
+//--------------------------------------------------
+function BinarySearch(sortedArray, value) {
+  let lower = 0;
+  let upper = sortedArray.length-1;
+  let middle;
+  do {
+    middle = lower + Math.floor((upper-lower)/2);
+    if(value === sortedArray[middle]){
       return middle;
     }
-    if(key > array[middle]){
-      start = middle +1;
+    if(value<sortedArray[middle]){
+      upper = middle - 1;
+    } else { 
+      lower = middle + 1;
     }
-    if(key < array[middle]){
-      end = middle -1;
-    }
-    else{
-      return -1;
-    }
-  }
+  } while(lower<=upper);
+  return -1;
 }
-binarySearch ();
+//--------------------------------------------------
