@@ -27,3 +27,4 @@ array-reverse         | [Go To](https://emadidris.github.io/data-structures-and-
 array-insert-shift    | [Go To](https://emadidris.github.io/data-structures-and-algorithms/401/array-insert-shift) 
 array-binary-search   | [Go To](https://emadidris.github.io/data-structures-and-algorithms/401/array-binary-search)
 linked-list           | [Go To](https://emadidris.github.io/data-structures-and-algorithms/401/linked-list)
+linked-list-insertions| [Go To](https://emadidris.github.io/data-structures-and-algorithms/401/linked-list-insertions)
