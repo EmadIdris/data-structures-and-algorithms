@@ -34,3 +34,4 @@ insertAfter() - add a new node after the node of a given value
 ## Solution
 
 ![Whiteboard](./whiteboard/linked-list.png)
+
