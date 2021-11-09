@@ -19,7 +19,7 @@ To run your tests
 - run `npm test ##` to only run tests for challenge ## (i.e. 01)
 
 ### 401 Data Structures, Code Challenges
-linked-list-kth
+linked-list-zip
 
 Name | Link 
 -----| -----
@@ -29,3 +29,4 @@ array-binary-search   | [Go To](https://emadidris.github.io/data-structures-and-
 linked-list           | [Go To](https://emadidris.github.io/data-structures-and-algorithms/401/linked-list)
 linked-list-insertions| [Go To](https://emadidris.github.io/data-structures-and-algorithms/401/linked-list-insertions)
 linked-list-kth       | [Go To](https://emadidris.github.io/data-structures-and-algorithms/401/linked-list-kth)
+linked-list-zip       | [Go To](https://emadidris.github.io/data-structures-and-algorithms/401/linked-list-zip)
