@@ -31,4 +31,6 @@ linked-list-insertions| [Go To](https://emadidris.github.io/data-structures-and-
 linked-list-kth       | [Go To](https://emadidris.github.io/data-structures-and-algorithms/401/linked-list-kth)
 linked-list-zip       | [Go To](https://emadidris.github.io/data-structures-and-algorithms/401/linked-list-zip)
 stack-and-queue       | [Go To](https://emadidris.github.io/data-structures-and-algorithms/401/stack-and-queue)
+Reverse a Linked List | [Go To](https://emadidris.github.io/data-structures-and-algorithms/401/RLL)
+
 
