@@ -1,10 +1,10 @@
 'use strict';
 
-class Node {
+class Node{
   constructor(value){
-    this.value = value; // Create a new value.
-    this.next = null; // Set the initial top to null.
+      this.value=value;
+      this.next=null;
   }
 }
 
-module.exports = Node;
+module.exports=Node;
