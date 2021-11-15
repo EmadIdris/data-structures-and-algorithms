@@ -19,7 +19,7 @@ To run your tests
 - run `npm test ##` to only run tests for challenge ## (i.e. 01)
 
 ### 401 Data Structures, Code Challenges
-
+stack-queue-animal-shelter
 
 Name | Link 
 -----| -----
@@ -33,6 +33,7 @@ linked-list-zip       | [Go To](https://emadidris.github.io/data-structures-and-
 stack-and-queue       | [Go To](https://emadidris.github.io/data-structures-and-algorithms/401/stack-and-queue)
 Reverse a Linked List | [Go To](https://emadidris.github.io/data-structures-and-algorithms/401/RLL)
 stack-queue-pseudo    | [Go To](https://emadidris.github.io/data-structures-and-algorithms/401/stack-queue-pseudo)
+stack-queue-animal-shelter | [Go To](https://emadidris.github.io/data-structures-and-algorithms/401/stack-queue-animal-shelter)
 
 
 
