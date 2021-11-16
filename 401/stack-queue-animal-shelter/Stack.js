@@ -1,54 +1,50 @@
 'use strict';
-//------------------------------------------
+
 const Node = require('./node');
 //------------------------------------------
-class Queue{
+class Stack{
   constructor(){
-    this.front = null;
-    this.rear = null;
+    this.top = null;
     this.length = 0;
   }
 //------------------------------------------
-  enqueue(value){
+  push(value){
     let newNode = new Node(value);
     if(this.isEmpty()){
-      console.log('initiating empty queue');
-      this.front = newNode;
-      this.rear = newNode;
+      console.log('initiating new stack');
+      this.top = newNode;
       this.length = this.length + 1;
     } else {
-      this.rear.next = newNode;
-      this.rear = newNode;
+      newNode.next = this.top;
+      this.top = newNode;
       this.length = this.length + 1;
     }
-    return this.rear.value;
+    return this.top.value;
   }
 //------------------------------------------
-  dequeue(){
+  pop(){
     if(this.isEmpty()){
-      console.log('empty queue! you can\'t pop');
+      console.log('empty stack! you can\'t pop');
       return false;
     }
-    let temp = this.front;
-    this.front = this.front.next;
+    let temp = this.top;
+    this.top = this.top.next;
     temp.next = null;
     this.length = this.length - 1;
-    if(!this.length){
-      return 'empty queue';
-    }
-    return this.front.value;
+    return temp.value;
   }
 //------------------------------------------
   peek(){
     if(this.isEmpty()){
-      console.log('empty queue');
+      console.log('empty stack');
       return false;
     }
-    return this.front.value;
+    return this.top.value;
   }
 //------------------------------------------
   isEmpty(){
-    return this.length === 0;
+    return this.top === null;
   }
 }
-module.exports = Queue;
+//------------------------------------------
+module.exports = Stack;
