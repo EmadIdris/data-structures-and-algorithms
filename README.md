@@ -36,6 +36,6 @@ stack-queue-pseudo    | [Go To](https://emadidris.github.io/data-structures-and-
 stack-queue-animal-shelter | [Go To](https://emadidris.github.io/data-structures-and-algorithms/401/stack-queue-animal-shelter)
 stack-queue-brackets | [Go To](https://emadidris.github.io/data-structures-and-algorithms/401/stack-queue-brackets)
 getMax | [Go To](https://emadidris.github.io/data-structures-and-algorithms/401/getMax)
-
+trees  | [Go To](https://emadidris.github.io/data-structures-and-algorithms/401/trees)
 
 
