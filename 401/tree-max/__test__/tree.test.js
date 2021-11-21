@@ -11,17 +11,16 @@ const { Node, BinarySearchTree } = require('../tree');
 //     Can successfully return a collection from a preorder traversal
 //     Can successfully return a collection from an inorder traversal
 //     Can successfully return a collection from a postorder traversal
+//     Can successfully find a maximum value using preOrder traversal (OLD)
+//     Can successfully find a maximum value in the tree
 
-describe('Node Constructor', () => {
+describe('Tree-Max', () => {
   it('successfully instantiates a new node', () => {
     let node = new Node(5);
     expect(node.leftChild).toBeNull();
     expect(node.rightChild).toBeNull();
     expect(node.value).toBe(5);
   });
-});
-
-describe('BinarySearchTree Constructor', () => {
   it('successfully instantiate an empty Binary Search Tree', () => {
     let tree = new BinarySearchTree();
     expect(tree.root).toBeNull();
@@ -40,9 +39,6 @@ describe('BinarySearchTree Constructor', () => {
     expect(tree.root.leftChild.value).toBe(3);
     expect(tree.root.rightChild.value).toBe(7);
   });
-});
-
-describe('BinaryTree Methods', () => {
   it('successfully returns null on BinaryTree methods if called on an empty tree', () => {
     let tree = new BinarySearchTree();
     let preOrder = tree.preOrder();
@@ -55,6 +51,7 @@ describe('BinaryTree Methods', () => {
     expect(postOrder).toBeNull();
     expect(findMax).toBeNull();
   });
+
   it('successfully return a collection from a preOrder traversal', () => {
     let tree = new BinarySearchTree();
     tree.add(4);
@@ -66,6 +63,7 @@ describe('BinaryTree Methods', () => {
     let preOrder = tree.preOrder();
     expect(preOrder).toEqual([4, 2, 1, 3, 6, 5]);
   });
+
   it('successfully return a collection from an inOrder traversal', () => {
     let tree = new BinarySearchTree();
     tree.add(4);
@@ -77,6 +75,7 @@ describe('BinaryTree Methods', () => {
     let inOrder = tree.inOrder();
     expect(inOrder).toEqual([1, 2, 3, 4, 5, 6]);
   });
+
   it('successfully return a collection from a postOrder traversal', () => {
     let tree = new BinarySearchTree();
     tree.add(4);
@@ -88,6 +87,7 @@ describe('BinaryTree Methods', () => {
     let postOrder = tree.postOrder();
     expect(postOrder).toEqual([1, 3, 2, 5, 6, 4]);
   });
+
   it('successfully find a maximum value using preOrder traversal (OLD)', () => {
     let tree = new BinarySearchTree();
     tree.add(4);
@@ -100,6 +100,7 @@ describe('BinaryTree Methods', () => {
     let findMax = tree.oldFindMaximumValue(preOrderArray);
     expect(findMax).toEqual(6);
   });
+
   it('successfully find a maximum value in the tree', () => {
     let tree = new BinarySearchTree();
     tree.add(4);
@@ -111,4 +112,5 @@ describe('BinaryTree Methods', () => {
     let findMax = tree.findMaximumValue();
     expect(findMax).toEqual(6);
   });
-});
+
+})
