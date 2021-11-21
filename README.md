@@ -19,7 +19,7 @@ To run your tests
 - run `npm test ##` to only run tests for challenge ## (i.e. 01)
 
 ### 401 Data Structures, Code Challenges
-stack-queue-brackets
+
 
 Name | Link 
 -----| -----
@@ -37,5 +37,6 @@ stack-queue-animal-shelter | [Go To](https://emadidris.github.io/data-structures
 stack-queue-brackets | [Go To](https://emadidris.github.io/data-structures-and-algorithms/401/stack-queue-brackets)
 getMax | [Go To](https://emadidris.github.io/data-structures-and-algorithms/401/getMax)
 trees  | [Go To](https://emadidris.github.io/data-structures-and-algorithms/401/trees)
+tree-max  | [Go To](https://emadidris.github.io/data-structures-and-algorithms/401/tree-max)
 
 
