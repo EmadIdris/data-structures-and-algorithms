@@ -39,5 +39,7 @@ getMax | [Go To](https://emadidris.github.io/data-structures-and-algorithms/401/
 trees  | [Go To](https://emadidris.github.io/data-structures-and-algorithms/401/trees)
 tree-max  | [Go To](https://emadidris.github.io/data-structures-and-algorithms/401/tree-max)
 tree-breadth-first | [Go To](https://emadidris.github.io/data-structures-and-algorithms/401/tree-breadth-first)
+tree-fizz-buzz | [Go To](https://emadidris.github.io/data-structures-and-algorithms/401/tree-fizz-buzz)
+
 
 
