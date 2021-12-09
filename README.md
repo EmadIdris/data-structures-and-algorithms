@@ -43,6 +43,9 @@ tree-fizz-buzz | [Go To](https://emadidris.github.io/data-structures-and-algorit
 InsertionSort | [Go To](https://emadidris.github.io/data-structures-and-algorithms/401/InsertionSort)
 Merge Sort | [Go To](https://emadidris.github.io/data-structures-and-algorithms/401/mergeSort)
 QuickSort | [Go To](https://emadidris.github.io/data-structures-and-algorithms/401/QuickSort)
+hashtable | [Go To](https://emadidris.github.io/data-structures-and-algorithms/401/hashtable)
+
+
 
 
 
