@@ -44,6 +44,8 @@ InsertionSort | [Go To](https://emadidris.github.io/data-structures-and-algorith
 Merge Sort | [Go To](https://emadidris.github.io/data-structures-and-algorithms/401/mergeSort)
 QuickSort | [Go To](https://emadidris.github.io/data-structures-and-algorithms/401/QuickSort)
 hashtable | [Go To](https://emadidris.github.io/data-structures-and-algorithms/401/hashtable)
+hashmap-repeated-word | [Go To](https://emadidris.github.io/data-structures-and-algorithms/401/hashmap-repeated-word)
+
 
 
 
