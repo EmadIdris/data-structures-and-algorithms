@@ -45,6 +45,7 @@ Merge Sort | [Go To](https://emadidris.github.io/data-structures-and-algorithms/
 QuickSort | [Go To](https://emadidris.github.io/data-structures-and-algorithms/401/QuickSort)
 hashtable | [Go To](https://emadidris.github.io/data-structures-and-algorithms/401/hashtable)
 hashmap-repeated-word | [Go To](https://emadidris.github.io/data-structures-and-algorithms/401/hashmap-repeated-word)
+tree-intersection | [Go To](https://emadidris.github.io/data-structures-and-algorithms/401/tree-intersection)
 
 
 
