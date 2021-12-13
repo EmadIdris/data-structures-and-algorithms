@@ -1,91 +1,70 @@
 'use strict';
 
-const { Node, BinarySearchTree } = require('../tree');
+const test = require('../tree.js');
 
-// Write tests to prove the following functionality:
+describe('testing tree methods', () => {
+  const tree = new test.BSTree();
+  const biTree = new test.BiTree();
+  const nodeA = new test.Node(5);
+  const nodeB = new test.Node(10);
+  const nodeC = new test.Node(15);
+  biTree.root = new test.Node(5);
+  biTree.root.left = nodeB;
+  biTree.root.right = nodeC;
+  biTree.root.right.right = nodeA;
 
-//     Can successfully instantiate a new node
-//     Can successfully instantiate an empty Binary Search Tree
-//     Can successfully instantiate a tree with a single root node
-//     Can successfully add a left child and right child to a single root node
-//     Can successfully return a collection from a preorder traversal
-//     Can successfully return a collection from an inorder traversal
-//     Can successfully return a collection from a postorder traversal
-
-describe('Node Constructor', () => {
-  it('successfully instantiates a new node', () => {
-    let node = new Node(5);
-    expect(node.leftChild).toBeNull();
-    expect(node.rightChild).toBeNull();
-    expect(node.value).toBe(5);
+  it('can successfully instantiate an empty tree', () => {
+    expect(tree.root).toEqual(null);
   });
-});
 
-describe('BinarySearchTree Constructor', () => {
-  it('successfully instantiate an empty Binary Search Tree', () => {
-    let tree = new BinarySearchTree();
-    expect(tree.root).toBeNull();
+  it('can successfully instantiate a tree with a single root node', () => {
+    tree.add(6);
+
+    expect(tree.root.value).toEqual(6);
+    expect(tree.root.left).toEqual(null);
+    expect(tree.root.right).toEqual(null);
   });
-  it('successfully instantiate a tree with a single root node', () => {
-    let tree = new BinarySearchTree();
+
+  it('can successfully add a left child and a right child to a single node', () => {
+    tree.add(3);
     tree.add(9);
-    expect(tree.root.value).toBe(9);
-  });
-  it('successfully add a left child and right child to a single root node', () => {
-    let tree = new BinarySearchTree();
-    tree.add(5);
-    tree.add(3);
-    tree.add(7);
-    expect(tree.root.value).toBe(5);
-    expect(tree.root.leftChild.value).toBe(3);
-    expect(tree.root.rightChild.value).toBe(7);
-  });
-});
 
-describe('BinaryTree Methods', () => {
-  it('successfully returns null on BinaryTree methods if called on an empty tree', () => {
-    let tree = new BinarySearchTree();
-    let preOrder = tree.preOrder();
-    let inOrder = tree.inOrder();
-    let postOrder = tree.postOrder();
-    let preOrderArray = tree.preOrder();
-    let findMax = tree.oldFindMaximumValue(preOrderArray);
-    expect(preOrder).toBeNull();
-    expect(inOrder).toBeNull();
-    expect(postOrder).toBeNull();
-    expect(findMax).toBeNull();
+    expect(tree.root.value).toEqual(6);
+    expect(tree.root.left.value).toEqual(3);
+    expect(tree.root.right.value).toEqual(9);
   });
-  it('successfully return a collection from a preOrder traversal', () => {
-    let tree = new BinarySearchTree();
-    tree.add(4);
-    tree.add(2);
-    tree.add(6);
-    tree.add(1);
+
+  it('can successfully add a left child and a right child to a single node', () => {
     tree.add(3);
-    tree.add(5);
-    let preOrder = tree.preOrder();
-    expect(preOrder).toEqual([4, 2, 1, 3, 6, 5]);
+    tree.add(9);
+
+    expect(tree.root.value).toEqual(6);
+    expect(tree.root.left.value).toEqual(3);
+    expect(tree.root.right.value).toEqual(9);
   });
-  it('successfully return a collection from an inOrder traversal', () => {
-    let tree = new BinarySearchTree();
-    tree.add(4);
-    tree.add(2);
-    tree.add(6);
-    tree.add(1);
-    tree.add(3);
-    tree.add(5);
-    let inOrder = tree.inOrder();
-    expect(inOrder).toEqual([1, 2, 3, 4, 5, 6]);
+
+  it('Can successfully return a collection from a preorder traversal', () => {
+    expect(biTree.preOrder()).toEqual([5, 10, 15, 5]);
   });
-  it('successfully return a collection from a postOrder traversal', () => {
-    let tree = new BinarySearchTree();
-    tree.add(4);
-    tree.add(2);
-    tree.add(6);
-    tree.add(1);
-    tree.add(3);
-    tree.add(5);
-    let postOrder = tree.postOrder();
-    expect(postOrder).toEqual([1, 3, 2, 5, 6, 4]);
+
+  it('Can successfully return a collection from a post order traversal', () => {
+    expect(biTree.postOrder()).toEqual([10, 5, 15, 5]);
+  });
+
+  it('Can successfully return a collection from a preorder traversal', () => {
+    expect(biTree.inOrder()).toEqual([10, 5, 15, 5]);
+  });
+
+  it('Can successfully determine with a boolean if a value is in a BSTree', () => {
+    expect(tree.contains(8)).toEqual(false);
+    expect(tree.contains(9)).toEqual(true);
+  });
+
+  it('Can successfully find the max value in a Binary Tree', () => {
+    expect(biTree.findMaxValue()).toEqual(15);
+  });
+
+  it('Can successfully return a collection from a Breadth First traversal', () => {
+    expect(biTree.breadthFirstTraversal()).toEqual([5, 10, 15, 5]);
   });
 });
